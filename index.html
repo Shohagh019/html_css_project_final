@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+            <div class="container-fluid">
+              <!-- Logo aligned to the left -->
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" style="width: 70px; height: 70px;" alt="Logo">
+              </a>
+          
+              <!-- Toggler for mobile view -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                      aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <!-- Navbar items aligned to the right -->
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 fw-bold">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                  </li>
+                </ul>
+                <a href="path-to-your-resume.pdf" download class="btn btn-outline-none bg-info d-flex align-items-center resume-button justify-content-around fw-bold">Resume<i class="fa-solid fa-arrow-down ms-2"></i></a>
+              </div>
+            </div>
+          </nav>
+          <!-- banner section -->
+          <div class="container-fluid py-5">
+            <div class="row align-items-center justify-content-between">
+              <!-- Text Content -->
+              <div class="col-lg-6 mb-4 mb-lg-0 ps-5">
+                <h1>HI!<br>I'M LOKMAN HOSSAIN</h1>
+                <h4>Web Developer || React Developer || Programmer</h4>
+                <p>
+                  Hi, I'm a passionate web developer with a knack for turning ideas into dynamic 
+                  and user-friendly digital experiences. I specialize in building responsive websites 
+                  and applications, ensuring seamless performance across all devices. Let's build something amazing together!
+                </p>
+                <div class="icon d-flex align-items-center gap-3 mt-3">
+                  <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                  <a href="path-to-your-resume.pdf" download 
+                     class="btn btn-info text-white resume-button d-flex align-items-center fw-bold">
+                    Resume <i class="fa-solid fa-arrow-down ms-2"></i>
+                  </a>
+                </div>
+              </div>
+        
+              <!-- Image Section -->
+              <div class="col-lg-5">
+                <div class="img">
+                  <img src="images/banner.jpg" alt="Profile Banner" style="height: 600px;">
+                </div>
+              </div>
+            </div>
+          </div>
+    </header>
+    
+    <main>
+<!-- portfolio section -->
+    <div class="container my-5">
+      <h1 class="text-center display-4 mb-5">Portfolio</h1>
+    
+      <div class="banner d-flex align-items-center p-4">
+        <div id="carouselExample1" class="carousel slide w-50 me-3" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/Travel-Search.png" class="d-block w-100" alt="Travel Search">
+            </div>
+            <div class="carousel-item">
+              <img src="images/travel-guru-map.png" class="d-block w-100" alt="Travel Guru Map">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    
+        <div class="poster_text w-50">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <h2>Online University</h2>
+            <a href="#"><i class="fa-brands fa-react fa-2x"></i></a>
+            <a href="#"><i class="fa-brands fa-node-js fa-2x"></i></a>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque deleniti ut reiciendis dolorem laudantium sunt! Nemo libero laudantium, eveniet eius accusantium aut praesentium nostrum, dolores similique modi architecto maxime veniam beatae fuga temporibus.</p>
+          <div class="d-flex gap-2 mt-3">
+            <button>React</button>
+            <button>Firebase</button>
+            <button>HTML</button>
+            <button>Node</button>
+            <button>CSS</button>
+          </div>
+        </div>
+      </div>
+    
+      <div class="banner d-flex align-items-center p-4">
+        <div id="carouselExample2" class="carousel slide w-50 me-3" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/Travel-Search.png" class="d-block w-100" alt="Travel Search">
+            </div>
+            <div class="carousel-item">
+              <img src="images/travel-guru-map.png" class="d-block w-100" alt="Travel Guru Map">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    
+        <div class="poster_text w-50">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <h2>Travel Guru</h2>
+            <a href="#"><i class="fa-brands fa-react fa-2x"></i></a>
+            <a href="#"><i class="fa-brands fa-node-js fa-2x"></i></a>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque deleniti ut reiciendis dolorem laudantium sunt! Nemo libero laudantium, eveniet eius accusantium aut praesentium nostrum, dolores similique modi architecto maxime veniam beatae fuga temporibus.</p>
+          <div class="d-flex gap-2 mt-3">
+            <button>React</button>
+            <button>Firebase</button>
+            <button>HTML</button>
+            <button>Node</button>
+            <button>CSS</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Expertise Section -->
+<div class="expertise">
+  <h1>Expertise:</h1>
+  <div class="button_all">
+    <div>
+      <button>React.js</button>
+      <button>Javascript</button>
+      <button>Node.js</button>
+      <button>Firebase</button>
+    </div>
+    <div>
+      <button>Express.js</button>
+      <button>HTML</button>
+      <button>Bootstrap</button>
+      <button>MongoDB</button>
+    </div>
+  </div>
+
+  <h1>Comfortable:</h1>
+  <div class="d-flex align-items-center justify-content-between mb-4">
+    <div class="button_com d-flex gap-2">
+      <button>SQL</button>
+      <button>Redux</button>
+      <button>Socket.io</button>
+      <button>AWS</button>
+      <button>Docker</button>
+      <button>Typescript</button>
+      <button>Node.js</button>
+    </div>
+    <div class="bg-light p-5">
+      <h1>My Education</h1>
+      <h3>BSS in Peace & Conflict Studies,</h3>
+      <h3>University of Dhaka, Bangladesh</h3>
+      <h5>2018 - 2022</h5>
+    </div>
+  </div>
+
+  <h1>Familiar:</h1>
+  <div class="button_fam d-flex gap-2">
+    <button>C++</button>
+    <button>Python</button>
+    <button>Spring Boot</button>
+    <button>Networking</button>
+    <button>Docker</button>
+    <button>Typescript</button>
+    <button>Node.js</button>
+  </div>
+
+  <h1>Tools:</h1>
+  <div class="button_too d-flex gap-2">
+    <button>VS Code</button>
+    <button>JIRA</button>
+    <button>Trello</button>
+    <button>Github</button>
+    <button>Git</button>
+  </div>
+</div>
+
+<!-- contact with me section -->
+<div class="contact">
+  <h1>Contact With Me</h1>
+  <form>
+    <div class="row g-3">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="First Name" aria-label="First name" required>
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Last Name" aria-label="Last name" required>
+      </div>
+    </div>
+    <div class="mb-3">
+      <input type="email" class="form-control" placeholder="Email" aria-label="Email" required style="margin-top: 20px;">
+    </div>
+    <div class="mb-3">
+      <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Send</button>
+  </form>
+</div>
+
+    </main>
+    <footer class="footer text-center p-4 mt-5">
+      <p>&copy; 2023 Lokman Hossain</p>
+      <div class="d-flex gap-4 justify-content-center">
+        <a href="#"><i class="fa-brands fa-github fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
+      </div>
+
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

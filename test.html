@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokman Hossain - Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Dark Theme CSS */
+        body {
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* White text color */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #1a1a1a; /* Darker navbar background */
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #1a1a1a; /* Darker footer background */
+            color: #ffffff;
+        }
+
+        /* Button styles */
+        .btn-info {
+            background-color: #007bff; /* Bootstrap primary color */
+            color: white;
+        }
+
+        /* Form styles */
+        .contact form .form-control {
+            background-color: #242424; /* Dark background for form controls */
+            color: #ffffff; /* White text for form controls */
+            border: 1px solid #444; /* Dark border */
+        }
+
+        .form-control::placeholder {
+            color: #cccccc; /* Placeholder text color */
+        }
+
+        /* Expertise section button styles */
+        .button_all button,
+        .button_com button,
+        .button_fam button,
+        .button_too button {
+            background-color: #444; /* Dark button background */
+            color: #ffffff; /* White text color */
+            border: none; /* No border */
+        }
+
+        .button_all button:hover,
+        .button_com button:hover,
+        .button_fam button:hover,
+        .button_too button:hover {
+            background-color: #007bff; /* Change on hover */
+            color: white;
+        }
+
+        /* Footer icon styles */
+        .footer a {
+            color: #ffffff; /* White icons */
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            color: #007bff; /* Change color on hover */
+        }
+
+        /* Expertise buttons */
+        .expertise h1 {
+            color: #ffffff; /* Ensure headers are white */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" style="width: 70px; height: 70px;" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                    <a href="path-to-your-resume.pdf" download class="btn btn-info d-flex align-items-center resume-button fw-bold">Resume<i class="fa-solid fa-arrow-down ms-2"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid py-5">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6 mb-4 mb-lg-0 ps-5">
+                    <h1>HI!<br>I'M LOKMAN HOSSAIN</h1>
+                    <h4>Web Developer || React Developer || Programmer</h4>
+                    <p>Hi, I'm a passionate web developer with a knack for turning ideas into dynamic 
+                       and user-friendly digital experiences. I specialize in building responsive websites 
+                       and applications, ensuring seamless performance across all devices. Let's build something amazing together!</p>
+                    <div class="icon d-flex align-items-center gap-3 mt-3">
+                        <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="path-to-your-resume.pdf" download class="btn btn-info text-white resume-button d-flex align-items-center fw-bold">
+                            Resume <i class="fa-solid fa-arrow-down ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="img">
+                        <img src="images/banner.jpg" alt="Profile Banner" style="height: 600px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Portfolio Section -->
+        <div class="container my-5">
+            <h1 class="text-center display-4 mb-5">Portfolio</h1>
+
+            <div class="banner d-flex align-items-center p-4">
+                <div id="carouselExample1" class="carousel slide w-50 me-3" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/Travel-Search.png" class="d-block w-100" alt="Travel Search">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/travel-guru-map.png" class="d-block w-100" alt="Travel Guru Map">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div class="poster_text w-50">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <h2>Online University</h2>
+                        <a href="#"><i class="fa-brands fa-react fa-2x"></i></a>
+                        <a href="#"><i class="fa-brands fa-node-js fa-2x"></i></a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque deleniti ut reiciendis dolorem laudantium sunt! Nemo libero laudantium, eveniet eius accusantium aut praesentium nostrum, dolores similique modi architecto maxime veniam beatae fuga temporibus.</p>
+                    <div class="d-flex gap-2 mt-3">
+                        <button>React</button>
+                        <button>Firebase</button>
+                        <button>HTML</button>
+                        <button>Node</button>
+                        <button>CSS</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner d-flex align-items-center p-4">
+                <div id="carouselExample2" class="carousel slide w-50 me-3" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/React-Blog.png" class="d-block w-100" alt="React Blog">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Cv-builder.png" class="d-block w-100" alt="CV Builder">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div class="poster_text w-50">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <h2>Online University</h2>
+                        <a href="#"><i class="fa-brands fa-react fa-2x"></i></a>
+                        <a href="#"><i class="fa-brands fa-node-js fa-2x"></i></a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque deleniti ut reiciendis dolorem laudantium sunt! Nemo libero laudantium, eveniet eius accusantium aut praesentium nostrum, dolores similique modi architecto maxime veniam beatae fuga temporibus.</p>
+                    <div class="d-flex gap-2 mt-3">
+                        <button>React</button>
+                        <button>Firebase</button>
+                        <button>HTML</button>
+                        <button>Node</button>
+                        <button>CSS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Expertise Section -->
+        <section class="expertise">
+            <h1 class="text-center display-4 mb-5">Expertise</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4 text-center">
+                        <div class="button_all p-4">
+                            <button>Web Development</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 text-center">
+                        <div class="button_com p-4">
+                            <button>Communication</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 text-center">
+                        <div class="button_fam p-4">
+                            <button>Family</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 text-center">
+                        <div class="button_too p-4">
+                            <button>Tooling</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer text-center p-4">
+        <p>&copy; 2023 Lokman Hossain</p>
+        <a href="#"><i class="fa-brands fa-github fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-jhOjN8Q+TAMFJhC3+AQsb4gS8G2F5T8g3qunlQ9n10v0qN1jlzWz4t04U0k6s7gi" crossorigin="anonymous"></script>
+</body>
+</html>
